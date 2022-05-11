@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #1b1b32;
+  z-index: -1;
+  background-image: linear-gradient(
+      115deg,
+      rgba(70, 70, 187, 0.8),
+      rgba(162, 162, 221, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+form {
+  width: 50%;
+  margin: 2rem 0;
+  margin-left: 25%;
+  background-color: rgb(27 27 50 / 67%);
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+h1 {
+  margin: 5rem;
+  margin-bottom: 1.25rem;
+}
+
+p {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+label {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+textarea {
+  min-height: 100px;
+  padding: 0.6rem;
+  width: 100%;
+  resize: vertical;
+}
+
+button {
+  font-size: 1.25rem;
+  width: 100%;
+  height: 45px;
+  background-color: rgba(37, 168, 70, 0.815);
+  color: inherit;
+  border: none;
+  border-radius: 5px;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+.input-checkbox,
+.input-radio {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+#title {
+  text-align: center;
+  font-weight: 600;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+}
